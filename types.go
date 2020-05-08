@@ -746,7 +746,7 @@ type InlineQueryResultCachedVideo struct {
 	InputMessageContent interface{}           `json:"input_message_content,omitempty"`
 }
 
-// https://github.com/go-telegram-bot-api/telegram-bot-api/pull/292/files
+// https://github.com/phanirithvij/telegram-bot-api/pull/292/files
 // InlineQueryResultCachedSticker is an inline query response with cached sticker.
 type InlineQueryResultCachedSticker struct {
 	Type                string                `json:"type"`            // required
