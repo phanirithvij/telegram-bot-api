@@ -746,6 +746,18 @@ type InlineQueryResultCachedVideo struct {
 	InputMessageContent interface{}           `json:"input_message_content,omitempty"`
 }
 
+// https://github.com/go-telegram-bot-api/telegram-bot-api/pull/292/files
+// InlineQueryResultCachedSticker is an inline query response with cached sticker.
+type InlineQueryResultCachedSticker struct {
+	Type                string                `json:"type"`            // required
+	ID                  string                `json:"id"`              // required
+	StickerID           string                `json:"sticker_file_id"` // required
+	Title               string                `json:"title"`           // required
+	ParseMode           string                `json:"parse_mode"`
+	ReplyMarkup         *InlineKeyboardMarkup `json:"reply_markup,omitempty"`
+	InputMessageContent interface{}           `json:"input_message_content,omitempty"`
+}
+
 // InlineQueryResultAudio is an inline query response audio.
 type InlineQueryResultAudio struct {
 	Type                string                `json:"type"`      // required
